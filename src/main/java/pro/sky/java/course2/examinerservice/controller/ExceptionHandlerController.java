@@ -4,6 +4,10 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import pro.sky.java.course2.examinerservice.exception.*;
 
+/*
+Отдельный класс Контроллера для отлова всех ошибок при работе приложения
+ */
+
 @RestControllerAdvice
 public class ExceptionHandlerController {
 
