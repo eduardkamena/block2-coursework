@@ -9,6 +9,7 @@ import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import pro.sky.java.course2.examinerservice.domain.Question;
 import pro.sky.java.course2.examinerservice.exception.AmountOfGetQuestionsMoreQuestionListException;
+import pro.sky.java.course2.examinerservice.exception.MinusOrZeroAmountException;
 
 import java.util.Set;
 
@@ -79,19 +80,10 @@ public class ExaminerServiceImplTest {
                 .isThrownBy(() -> examinerService.getQuestions(amount));
     }
 
-    /* Не получается настроить тест с отрицательным или нулевым входным параметром
-    в методе getQuestions класса ExaminerServiceImpl.
-    Там должно выбрасываться исключение MinusOrZeroAmountException.
-    Возможно ли его настроить? Или так как параметр отрицательный или нулевой,
-    а список изначально не может быть null или отрицательным, то этот тест не имеет смысла?
-    Если все же возможно настроить - прошу помощи)
-
-
     @Test
     public void shouldThrowMinusOrZeroAmountException() {
         // given
-        int amount = 0;
-        Mockito.when(questionService.getAll()).thenThrow(MinusOrZeroAmountException.class);
+        int amount = -1;
 
         // when
         // then
@@ -99,7 +91,4 @@ public class ExaminerServiceImplTest {
                 .isThrownBy(() -> examinerService.getQuestions(amount));
     }
 
-    */
-
 }
-

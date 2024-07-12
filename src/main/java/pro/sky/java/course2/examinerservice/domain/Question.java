@@ -5,25 +5,19 @@ import java.util.Objects;
 /*
 Реализация сущности Question с двумя полями: question и answer.
 Данная сущность будет использоваться в качестве хранителя данных по вопросу.
-
-В данном случае оставил как есть, но IDEA очень хочет преобразовать данный класс в record
-*/
+ */
 
 public class Question {
 
-    // Переменная-строка вопроса
     private final String question;
 
-    // Переменная-строка ответа
     private final String answer;
 
-    // Конструктор
     public Question(String question, String answer) {
         this.question = question;
         this.answer = answer;
     }
 
-    // Геттеры
     public String getQuestion() {
         return question;
     }
@@ -32,7 +26,6 @@ public class Question {
         return answer;
     }
 
-    // equals, hashCode и toString
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
