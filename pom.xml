@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>pro.sky</groupId>
-	<artifactId>block2-coursework</artifactId>
+	<artifactId>java.course2.examinerservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>block2-coursework</name>
+	<name>java.course2.examinerservice</name>
 	<description>coursework of block2</description>
 	<url/>
 	<licenses>
@@ -39,6 +39,18 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.14.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.4</version>
 		</dependency>
 	</dependencies>
 
